@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Infotec - Informática para Internet ETEC DPM</title>
+    <link rel="icon" type="image/png" href="assets/img/iconLogo.png">
+</head>
+<body id="content">
+    <div class="container">
+        <header>
+            <p class="logo"><img src="assets/img/favicon.svg" alt="Logo representativa de uma janela de navegador">INFOTEC</p>
+            <nav>
+                <a href="">Sobre</a>
+                <a href="">Projetos</a>
+                <a href="">Desenvolvedores</a>
+            </nav>
+            
+            <div id="menu">
+                <button id="increase-font-size">+ A</button>
+                <button id="decrease-font-size">- A</button>
+            </div>
+        </header>
+        
+        <div id="banner">
+            <h1>INFOTEC</h1>   
+            <h2 class="code">&lt;Excellent code/&gt;</h2>
+            <img src="assets/img/walp.png" alt="Imagem de site desenvolvido pelos alunos de informática para internet, www.etecdarcypereirademoraes.com.br">
+        </div>
+        <div id="countdown">
+        </div>
+        <div id="sobre">
+            <p>A infotec é uma parte emocionante do evento Fetec, onde exibimos nossas criações e inovações no campo da informática para internet. Nossa missão é explorar e apresentar as últimas tendências em tecnologia da informação, experiências de usuário e desenvolvimento web. Acreditamos na importância de compartilhar conhecimento e inspirar outros a se aventurarem no mundo da tecnologia.</p>
+        </div>
+        <center><video width="830" height="640" controls>
+            <source src="video1.mp4" type="video/mp4">
+
+          <track kind="captions" src="legendas.vtt" srclang="en" label="Legendas em Inglês" default> 
+
+          <track kind="description" src="descricao-audio.vtt" srclang="en" label="Legendas em Inglês" default>
+        </video></center>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <div class="music-player">
+          <div class="top-bar">Player de Música</div>
+          <audio id="player" src="Alan Walker - Faded.mp3"></audio>
+          <button class="control-button" onclick="document.getElementById('player').play()"><i class="fa fa-play"></i></button>
+          <button class="control-button" onclick="document.getElementById('player').pause()"><i class="fa fa-pause"></i></button>
+          <button class="control-button" onclick="document.getElementById('player').currentTime -= 10"><i class="fa fa-backward"></i></button>
+          <button class="control-button" onclick="document.getElementById('player').currentTime += 10"><i class="fa fa-forward"></i></button>
+          <input id="volumeSlider" type="range" min="0" max="1" step="0.01" onchange="document.getElementById('player').volume = this.value"/>
+        </div>
+
+
+        <div id="footer">
+            <p>Desenvolvido por <span class="roxo">2 Informática</span></p> <!--p class="roxo"><a href="https://www.instagram.com/lupetmofc/" id="lupe">lupe™</a--></p>
+        </div>
+        <div class="radial" id="r1"></div>
+        <div class="radial" id="r2"></div>
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/font.js"> </script>
+</body>
+</html>
